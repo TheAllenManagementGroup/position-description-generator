@@ -1,0 +1,13 @@
+package com.example.pdgenerator.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RootController {
+
+    @GetMapping("/")
+    public String root() {
+        return "PD Generator is running! Use /api/generate to POST requests.";
+    }
+}
