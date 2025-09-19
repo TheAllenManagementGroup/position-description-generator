@@ -1,0 +1,75 @@
+
+---
+
+### 📄 `requirements.txt`
+
+```text
+# 📝 Requirements for PD Generator App
+
+---
+
+Java Requirements:
+- Java 17 or newer: https://adoptium.net
+- Maven 3.8+ : https://maven.apache.org/download.cgi
+
+---
+
+Ollama:
+- Install from: https://ollama.com/download
+- Model to pull:
+
+    gemma:2b       # Fastest and smallest (~2B params)
+
+- Run Ollama in a terminal:
+    ollama run gemma:2b
+
+---
+
+System Requirements:
+- 4GB RAM minimum (8GB recommended)
+- Internet access (initial model download only)
+- Terminal access (Bash, PowerShell, or CMD)
+
+---
+
+How to Check:
+- Java:
+    java -version
+
+- Maven:
+    mvn -v
+
+- Ollama:
+    ollama run gemma:2b
+
+---
+
+Optional Tools:
+- curl — for command-line testing (Linux/macOS/WSL)
+- Postman — GUI tool for API testing
+- PowerShell / CMD — for Windows terminal testing
+
+---
+
+How to Start the App (by Shell):
+
+Bash / Zsh / macOS / Linux:
+---------------------------
+git clone https://github.com/maki0311/pd-generator.git
+cd pd-generator
+ollama run gemma:2b
+mvn spring-boot:run
+
+PowerShell:
+-----------
+git clone https://github.com/maki0311/pd-generator.git
+cd .\pd-generator
+ollama run gemma:2b
+mvn spring-boot:run
+
+Command Prompt (CMD):
+---------------------
+git clone https://github.com/maki0311/pd-generator.git
+cd pd-generator
+ollama run gemma:2b
+mvn spring-boot:run
